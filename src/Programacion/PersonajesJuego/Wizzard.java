@@ -61,7 +61,7 @@ public class Wizzard extends BaseCharacter{
 
 
     @Override
-    public int Atacar(BaseCharacter b) {
+    public void Atacar(BaseCharacter b) {
         if(this.getHp() >0){
 
         if (this.magic >= 30){
@@ -81,8 +81,6 @@ public class Wizzard extends BaseCharacter{
         }else {
             System.out.println("El hechizero "+ this.getName()+ " está muerto, no puede atacar");
         }
-
-        return 0;
 
 
     }

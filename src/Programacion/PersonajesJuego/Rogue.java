@@ -38,7 +38,7 @@ public class Rogue extends BaseCharacter{
     }
 
     @Override
-    public int Atacar(BaseCharacter b) {
+    public void Atacar(BaseCharacter b) {
         if (this.getHp() > 0) {
 
             if(numBerser >0){
@@ -57,7 +57,6 @@ public class Rogue extends BaseCharacter{
             System.out.println("El picaro "+ this.getName()+ " no puede atacar, está muerto");
 
         }
-        return 0;
     }
 
     @Override

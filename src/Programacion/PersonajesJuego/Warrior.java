@@ -53,7 +53,7 @@ package Programacion.PersonajesJuego;
     }
 
     @Override
-    public int Atacar(BaseCharacter b) {
+    public void Atacar(BaseCharacter b) {
         if (this.getHp()>0){
 
         double totalDamage = this.getDamageCharacter() * (1 + (this.getLevel() / 100.0));
@@ -66,6 +66,5 @@ package Programacion.PersonajesJuego;
         }
 
 
-        return 0;
     }
 }
